@@ -40,27 +40,44 @@ nav li a:hover {
 
 body {
 	margin:0;
+	background-color: #F3F3F3;
 }
 
-/*
-Targets items within the header
-*/
+/*Targets items within the header*/
 header {
 	display: block;
 	background-color: white;
 }
 
-/*
-Aside
-*/
+/*Aside*/
 aside {
 	display: block;
 	background-color: white;
 	max-width: 200px;
 	word-wrap: break-word;
-	float: right;
+	float: left;
+	margin: 5% 2% 0px 0px;
+}
+
+/*Article Formats*/
+
+body article{
+	max-width: 80%;
+	border-radius: 10px;
+	border: 1px solid grey;
+	overflow: auto;
+
 }
 
 /************
-Miscellaneous
+Media Queries
 ************/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+
+	nav li a{
+		font-size: 45px;
+	}
+}

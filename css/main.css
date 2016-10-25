@@ -1,7 +1,6 @@
 /*************
 Navigation Bar
 **************/
-
 html{
 	font-family: Geneva;
 }
@@ -37,7 +36,6 @@ nav li a:hover {
 /*************
 	Body
 ***************/
-
 body {
 	margin:0;
 	background-color: #F3F3F3;
@@ -60,19 +58,22 @@ aside {
 }
 
 /*Article Formats*/
-
 body article{
 	max-width: 80%;
 	border-radius: 10px;
 	border: 1px solid grey;
 	overflow: auto;
+	margin-top: 5%;
+}
 
+/*Image Container Formats */
+.imageDiv{
+	margin-top: 2%;
 }
 
 /************
 Media Queries
 ************/
-
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) { 

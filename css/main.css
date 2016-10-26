@@ -112,6 +112,10 @@ main aside img{
 	height: 100%;
 
 }
+.ad {
+	width:100%;
+	height: 100%;
+}
 
 /*Article Formats*/
 main article{
@@ -164,7 +168,7 @@ Content In Shop
 }
 #shopTable td{
 	height: 170px;
-	width:20%;
+	text-align: center;
 }
 
 #shopTable th {

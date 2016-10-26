@@ -1,19 +1,57 @@
 /*************
-Navigation Bar
-**************/
+   Contents
+**************
+1. Inital Styles
+2. Header
+3. Navigation Bar
+4. Main
+5. Content In Main
+
+
+/*************
+Inital Styles
+*************/
 html{
 	font-family: Geneva;
+}
+
+body {
+	margin:0;
+	padding-top: 250px
+}
+
+/*************
+	Header
+***************/
+header {
+	height: 300px;
+	padding-top: 50px;
+	background-color: #F77559;
+}
+
+header *{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+
+/*************
+Navigation Bar
+**************/
+nav {
+	background-color: #444;
+	box-shadow: 0px 2px 5px grey;
+	z-index: 150;
 }
 
 /*Only Targets lists within the nav bar*/
 nav ul {
 	list-style-type: none;
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: #444;
-	box-shadow: 0px 5px 5px grey;
 }
+
 
 /*Only Targets list items within the nav bar*/
 nav li {
@@ -33,22 +71,33 @@ nav li a:hover {
 	background-color: #222;
 }
 
+nav, main{
+	position: relative;
+}
+
+.nav-scrolled, header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
 /*************
-	Body
+	Main
 ***************/
-body {
-	margin:0;
+main{
 	background-color: #F3F3F3;
+	padding-top: 50px;
 }
 
-/*Targets items within the header*/
-header {
-	display: block;
-	background-color: white;
+.main-scrolled{
+	top: 50px;
 }
 
-/*Aside*/
-aside {
+
+/*************
+Content In Main
+***************/
+main aside {
 	display: block;
 	background-color: white;
 	max-width: 200px;
@@ -58,12 +107,11 @@ aside {
 }
 
 /*Article Formats*/
-body article{
+main article{
 	max-width: 80%;
 	border-radius: 10px;
 	border: 1px solid grey;
 	overflow: auto;
-	margin-top: 5%;
 }
 
 /*Image Container Formats */

@@ -67,9 +67,50 @@ body article{
 }
 
 /*Image Container Formats */
-.imageDiv{
+.imageDiv img{
 	margin-top: 2%;
+	width: 20%;
+	height: 20%;
 }
+
+/*Table Formatting*/
+#shopTableDiv{
+	overflow-x: auto;
+	margin-top: 5%;
+	margin-left: 20%;
+	width: 70%;
+}
+
+#shopTable{
+	border-collapse: collapse;
+}
+
+#shopTable th, #shopTable td{
+	border: 1px solid #ddd;
+    padding: 8px;
+}
+#shopTable td{
+	height: 170px;
+	width:20%;
+}
+
+#shopTable th {
+    text-align: left;
+    color: white;
+    background-color: #444;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*This changes the colour of every other row in the table for readability*/
+#shopTable tr:nth-child(even){background-color: #ccc;} 
+/*This adds a colour change on mouse-over*/
+#shopTable tr:hover {background-color: #b3b3b3;}
+
+td img{
+	width: 100%;
+	height: 100%;
+}
+
 
 /************
 Media Queries

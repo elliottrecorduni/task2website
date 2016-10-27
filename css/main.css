@@ -139,12 +139,14 @@ h2{
 
 /*Image Container Formats */
 .imageDiv{
-	margin-left: 35%;
+	margin-left: 15%;
 }
 .imageDiv img{
 	margin-top: 2%;
 	width: 20%;
 	height: 20%;
+	min-width: 100px;
+	min-height: 50px;
 }
 
 /*************
@@ -157,7 +159,7 @@ Content In Shop
 	margin-top: 5%;
 	margin-left: 20%;
 	width: 70%;
-	margin-left: 25%;
+	margin-left: 15%;
 }
 
 #shopTable{
@@ -188,12 +190,17 @@ Content In Shop
 td img{
 	max-width: 100%;
 	max-height: 100%;
+	min-width: 45px;
+	min-height: 50px;
 }
 
 
 /************
 Content In Sign Up
 ************/
+#signUpForm{
+	margin-left: 10%;
+}
 
 #signUpForm input, #signUpForm select{
 	padding: 1%;

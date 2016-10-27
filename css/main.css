@@ -14,6 +14,7 @@ Inital Styles
 *************/
 html{
 	font-family: Geneva;
+	background-color: #F3F3F3;
 }
 
 body {
@@ -114,7 +115,7 @@ main aside {
 }
 
 /*Article Formats*/
-main article{
+main article, main section{
 	max-width: 70%;
 /*	border-radius: 10px;
 	border: 1px solid grey;*/
@@ -184,6 +185,19 @@ td img{
 	max-height: 100%;
 }
 
+
+/************
+Content In Sign Up
+************/
+
+#signUpForm{
+	margin-left: 25%;
+}
+
+#signUpForm input, #signUpForm select{
+	padding: 1%;
+	margin: 1%;
+}
 
 /************
 Media Queries

@@ -25,13 +25,13 @@ body {
 /*************
 	Header
 ***************/
-header {
+header, #header {
 	height: 300px;
 	padding-top: 50px;
 	/*background-color: #F77559;*/
 }
 
-header *{
+header *, #header *{
 	display: inline-block;
 	padding-right: 20px;
 }
@@ -45,14 +45,14 @@ header *{
 /*************
 Navigation Bar
 **************/
-nav {
+nav, #navbar {
 	background-color: #444;
 	box-shadow: 0px 2px 5px grey;
 	z-index: 150;
 }
 
 /*Only Targets lists within the nav bar*/
-nav ul {
+nav ul, #navbar ul {
 	list-style-type: none;
 	overflow: hidden;
 	margin: 0;
@@ -61,11 +61,11 @@ nav ul {
 
 
 /*Only Targets list items within the nav bar*/
-nav li {
+nav li, #navbar li {
 	float: left;
 }
 
-nav li a {
+nav li a, #navbar li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -74,15 +74,15 @@ nav li a {
 	font-size: 20px;
 }
 
-nav li a:hover {
+nav li a:hover, #navbar li a:hover {
 	background-color: #222;
 }
 
-nav, main{
+nav, main, #navbar, #main{
 	position: relative;
 }
 
-.nav-scrolled, header{
+.nav-scrolled, header, #header{
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -91,7 +91,7 @@ nav, main{
 /*************
 	Main
 ***************/
-main{
+main, #main{
 	background-color: #F3F3F3;
 	padding-top: 50px;
 }
@@ -104,7 +104,7 @@ main{
 /*************
 Content In Main
 ***************/
-main aside {
+main aside, #main #sidebar {
 	display: block;
 	background-color: white;
 	max-width: 15%;
@@ -120,7 +120,7 @@ main aside {
 }
 
 /*Article Formats*/
-main article, main section{
+main article, main section, #main #article, #main #section{
 	max-width: 70%;
 /*	border-radius: 10px;
 	border: 1px solid grey;*/

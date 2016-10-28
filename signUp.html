@@ -8,15 +8,15 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 
-	<header>
+	<div id="header">
 			<div id="logodiv">
 			<a href=index.html> <img id="logo" title="Logo" src="img/bunLogo.png" alt="Logo"></a>
 			</div>
 			<div id="slogan">
 			</div>
-	</header>
+	</div>
 
-	<nav>
+	<div id="navbar">
 		<ul>
 	        <li><a href = "index.html">Home</a></li>
 	        <li><a href = "news.html">News</a></li>
@@ -24,44 +24,44 @@
 	        <li><a href = "shop.html">Club Shop</a></li>
 	        <li><a href = "signUp.html">Sign Up</a></li>
     	</ul>
-	</nav>
+	</div>
 
-	<main>
+	<div id="main">
 
-		<aside>
+		<div id="sidebar">
 			<img class="ad" src="img/kitkatad.png" alt="advert">
-		</aside>
+		</div>
 
 	<div>
-		<section>
+		<div id="section">
 			<h2>Become a Member Today - Sign Up!</h2>
 			<fieldset>
 			<legend>Please Enter Your Information</legend>
-			<form id="signUpForm" action="signup" method="post">
-				<input type="text" name="firstname" placeholder="Firstname">
-				<input type="text" name="lastname" placeholder="Lastname">
+			<form id="signUpForm" action="signup.php" method="post">
+				<input type="text" name="firstname" placeholder="Firstname" required>
+				<input type="text" name="lastname" placeholder="Lastname" required>
 				<input type="number" placeholder="Contact Number"><br>
-				<input type="text" name ="email" placeholder="Email">
-				<input type="text" name ="confemail" placeholder="Confirm Email">
+				<input type="text" name ="email" placeholder="Email" required>
+				<input type="text" name ="confemail" placeholder="Confirm Email" required>
 
 
 				<select name="gender">
 				<option value="Male">Male</option>
 				<option value="Female">Female</option>
 				<option value="PNTS">Prefer Not To Say</option>
+				</select>
 
 				<input type="submit" value="Sign Up">
 			</form>
 			</fieldset>
-
-		</section>
+		</div>
 	
 	</div>
 
 	<div id="signUpInfo">
-		<article>
+		<div id="article">
 			<p>Becoming a member is a great way to stay up to date with upcomming events, socials and recent competitions. You'll be signed up to our E-Newsletter <b>- of which you can opt out of at any time -</b> which will let you know the highlights of the recent and upcomming weeks. Additionly, by becomming a member you will be entered into our monthly lottery where you could win up to <i>£75</i> every month!<br><br>So join now and be a part of a truely amazing part Bournemouth University.</p>
-		</article>
+		</div>
 	</div>
-	</main>
+	</div>
 </html>
